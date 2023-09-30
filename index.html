@@ -11,14 +11,55 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
 
+
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+  
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding-top: 0;
+      }
+  
+      .swiper {
+        width: 100%;
+        height: 60vb;
+      }
+  
+      .swiper-slide {
+        
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+    </style>
 
 </head>
 <body>
     <header>
         <nav class="navbar">
           <div class="nav-logo">
-            <a href="#"><img src="./images/amazon_logo.png" alt="logo"></a>
+            <a href="#"><img src="amazon_logo.png" alt="logo"></a>
           </div>
           <div class="address">
             <a href="#" class="deliver">Deliver</a>
@@ -26,31 +67,62 @@
               <span class="material-symbols-outlined">location_on</span>
               <a href="#" class="location">India</a>
             </div>
-          </div>`
-  
-          <div class="nav-search">
-            <select class="select-search">
-              <option>All</option>
-              <option>All Categories</option>
-              <option>Amazon Devices</option>
+
+          </div>
+
+          <div class="nav-search text-black">
+            <select class="select-search w-15 text-left ">
+             
+              <option >All</option>
+              <option>All Departments</option>
+              <option>Arts & Crafts</option>
+              <option>Automative</option>
+              <option>Baby</option>
+              <option>Beauty & Personal Care</option>
+              <option>Books</option>
+              <option>Boys'Fashion</option>
+              <option>Computers</option>
+              <option>Deals</option>
+              <option>Digital Music</option>
+              <option>Electronics</option>
+              <option>Girls'Fashion</option>
+              <option>Health & Houselhold</option>
+              <option>Home & Kitichen</option>
+              <option>Industrial & Scientific</option>
+              <option>Luggage</option>
+              <option>Kindle Store</option>
+              <option>Movies & Tv</option>
+            
+
             </select>
             <input type="text" placeholder="Search Amazon" class="search-input">
             <div class="search-icon">
               <span class="material-symbols-outlined">search</span>
             </div>
           </div>
+
+    <div>
+        
+      <img src="india.png " class="h-6 w-7 mt-4">
+      <select class="bg-transparent text-white">
+        
+       <option class="text-black">IND</option>
+       <option class="text-black">EN</option>
+      </select>
+    </div>
+
   
-          <div class="sign-in">
+          <div class="sign-in border border-transparent p-1 hover:border-white">
            <a href="#"> <p>Hello, sign in</p>
             <span>Account &amp; Lists</span></a>
           </div>
   
-          <div class="returns">
+          <div class="returns border border-transparent p-1 hover:border-white">
             <a href="#"><p>Returns</p>
               <span>&amp; Orders</span></a>
           </div>
   
-          <div class="cart">
+          <div class="cart border border-transparent p-1 hover:border-white">
             <a href="#">
               <span class="material-symbols-outlined cart-icon">shopping_cart</span>
             </a>
@@ -64,13 +136,25 @@
               <span class="material-symbols-outlined">menu</span>
               <a href="#">All</a>
             </div>
-    
+        
             <ul class="links">
-              <li><a href="#">Today's Deals</a></li>
-              <li><a href="#">Customer Service</a></li>
-              <li><a href="#">Registry</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Sell</a></li>
+              <li><a href="#" class="border border-transparent p-1 hover:border-white">Today's Deals</a></li>
+              <li><a href="#" class="border border-transparent p-1 hover:border-white">Amazon miniTV</a></li>
+              <li><a href="#" class="border border-transparent p-1 hover:border-white">Sell</a></li>
+              <li><a href="#" class="border border-transparent p-1 hover:border-white">Amazon Pay</a></li>
+              <li><a href="#" class="border border-transparent p-1 hover:border-white">Buy Again</a></li>
+              <li><a href="#" class="border border-transparent p-1 hover:border-white">Best Sellers</a></li>
+              <li><a href="#" class="border border-transparent p-1 hover:border-white"></a>
+                <select class="bg-transparent text-white">
+        
+                  <option class="text-black">Prime</option>
+                  <option class="text-black"></option>
+                 </select></li>
+              <li><a href="#" class="border border-transparent p-1 hover:border-white">Mobiles</a></li>
+              <li><a href="#" class="border border-transparent p-1 hover:border-white">Customer Service</a></li>
+              <li><a href="#" class="border border-transparent p-1 hover:border-white">Gift Cards</a></li>
+
+
             </ul>
             <div class="deals">
               <a href="#">Shop deals in Electronics</a>
@@ -84,283 +168,104 @@
         <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./images/carusel1.jpg"></div>
-      <div class="swiper-slide"><img src="./images/carusel2.jpg" ></div>
-      <div class="swiper-slide"><img src="./images/carusel3.jpg"></div>
-      <div class="swiper-slide"><img src="./images/carusel4.jpg"></div>
+      <div class="swiper-slide"><img src="carusel1.jpg"></div>
+      <div class="swiper-slide"><img src="carusel2.jpg" ></div>
+      <div class="swiper-slide"><img src="carusel3.jpg"></div>
+      <div class="swiper-slide"><img src="carusel4.jpg"></div>
     
     </div>
+
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
+
+    <img src="assests/grid1.jpg" alt="" class="my-3" class="overlay-image" />
+    
   </div>
 
   <!-- Swiper JS -->
-
-
-  <!-- Dilip Sarkar html  -->
-  <!-- <div>  <h2>Up to 75% off | Headphones</h2></div> -->
-  <div class="card-holder">
-    <div class="image-card">
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/first.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/second.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |noise</a> 
-          </div>
-        </div>
+  <div class="card1">
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 px-4 w-full">
+      <!-- Grid item 1 -->
+      <div class="bg-white p-4">
+        <h2 class="text-xl font-bold">Shop school essentials</h2>
+        <img src="assests/grid1.jpg" alt="" class="my-3">
+        <p class="text-[#007185] text-xs">See More</p>
       </div>
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/third.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |BOULT</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/fourth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
+  
+      <!-- Grid item 2 -->
+      <div class="bg-white p-4">
+        <h2 class="text-xl font-bold">Shop festival prices, before the sale</h2>
+        <img src="assests/grid2.jpg" alt="" class="my-3">
+        <p class="text-[#007185] text-xs">See More</p>
       </div>
-      
-    </div>
-
-    <div class="image-card">
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/sixth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/seventh.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
+  
+      <!-- Grid item 3 -->
+      <div class="bg-white p-4">
+        <h2 class="text-xl font-bold">Shop school essentials</h2>
+        <img src="assests/grid3.jpg" alt="" class="my-3">
+        <p class="text-[#007185] text-xs">See More</p>
       </div>
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/eighth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/nineth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
+  
+      <!-- Grid item 4 -->
+      <div class="bg-white p-4">
+        <h2 class="text-xl font-bold">Up to 50% off | Blood glucose monitors</h2>
+        <img src="assests/grid1.jpg" alt="" class="my-3">
+        <p class="text-[#007185] text-xs">See More</p>
       </div>
-      
-    </div>  
-    
-    <div class="image-card">
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/eleventh.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/twelvth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
+  
+      <!-- Grid item 5 -->
+      <div class="bg-white p-4">
+        <h2 class="text-xl font-bold">Up to 50% off | Blood glucose monitors</h2>
+        <img src="assests/grid1.jpg" alt="" class="my-3">
+        <p class="text-[#007185] text-xs">See More</p>
       </div>
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/thirteenth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/fourtheenth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    
-    <div class="image-card">
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/fiftteenth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/sixteenth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/seventeenth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/seventeenth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-      </div>
-      
     </div>
   </div>
+  
 
-<hr>
+ <!-- second card section -->
+ 
 
-
-<div class="card-holder1">
-    <div class="image-card">
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/eighteenth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/nineteenth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |noise</a> 
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/twenteeth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |BOULT</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/twentyone.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-      </div>
+ <div class="card3">
+  <div class="gird grid-cols-4 rows-2  gap-4 px-4 w-100 flex mt-5" >
+    <div class="bg-white 400 p-4">
+      <h2 class="text-xl font-bold">Shop school essentials</h2>
+      <img src="assests/grid1.jpg" alt="" class="my-3">
+      <p class="text-[#007185] text-xs">See More</p>
       
     </div>
-
-    <div class="image-card">
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/twentyTwo.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/tweentyThree.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/twentyFour.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/twentyFive.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-      </div>
+    <div class="bg-white p-4">
+      <h2 class="text-xl font-bold">Shop festival prices, before the sale</h2>
+      <img src="assests/grid2.jpg" alt="" class="my-3">
+      <p class="text-[#007185] text-xs">See More</p>
       
-    </div>  
-    
-    <div class="image-card">
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/twentySix.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/twentySeven.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/twentyEight.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/tweentyNIne.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="bg-white p-4">
+      <h2 class="text-xl font-bold">Shop school essentials</h2>
+      <img src="assests/grid3.jpg" alt="" class="my-3">
+      <p class="text-[#007185] text-xs">See More</p>
+      
+    </div>
+    <div class="bg-white p-4">
+      <h2 class="text-xl font-bold">Up to 50% off | Blood glucose monitors</h2>
+      <img src="assests/grid1.jpg" alt="" class="my-3">
+      <p class="text-[#007185] text-xs">See More</p>
       
     </div>
     
-    <div class="image-card">
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/thirty.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/sixteenth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="card">
-          <img src="./images/offer-img/seventeenth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-        <div class="card">
-          <img src="./images/offer-img/seventeenth.jpg" alt="Avatar">
-          <div class="container">
-            <a href="#">upto 75% off |boAt</a> 
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+   </div>
+</div>
+  
+  
+
+
+
+
+<!-- Hello -->
+
+
+
+  
 
   <script src="script.js" defer></script>
 </body>
