@@ -203,7 +203,27 @@ body {
   height: 100%;
   object-fit: fill;
 }
+.card1{
+  position: absolute;
+  top: 370px;
+  z-index:200;
+}
 
+.card3{
+  margin-top: 19vh;
+}
+
+.btn{
+position: absolute;
+top: 25px;
+padding: 130px 40px;
+}
+
+.btn:hover{
+  border: 3px rgb(106, 117, 223) solid;
+  border-radius: 5px;
+
+}
 
                                               /* Dilip Sarkar CSS */
 
