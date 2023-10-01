@@ -20,3 +20,24 @@ var swiper = new Swiper(".mySwiper", {
       sideMenu.classList.remove('left-0');
       sideMenu.classList.add('left-[-250px]');
   }
+
+// sliding product section...............//
+
+
+const productContainers = [...document.querySelectorAll('.product-container')];
+
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainer.forEach((item, i)=> {
+  let containerDimension =item.getBoundingClientRect();
+  let containerWidth = containerDimension.width;
+
+  nxtBtn[i].addEventListener('click',() => {
+    item,scrollLeft += containerWidth;
+  })
+
+  preBtn[i].addEventListener('click',() => {
+    item.scrollLeft -= containerWidth;
+  })
+})
